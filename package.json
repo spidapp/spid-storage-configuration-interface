@@ -1,0 +1,11 @@
+{
+  "name": "spid-storage-configuration-interface",
+  "version": "0.0.0",
+  "description": "[Core] Spid Storage Configuration Interface",
+  "main": "ConfigurationStorageInterface.js",
+  "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://fgribreau.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "spid-interface": "0.0.1"
+  }
+}
