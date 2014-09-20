@@ -36,5 +36,22 @@ module.exports = Interface('ConfigurationStorageInterface', {
    * @param  {String} key  [description]
    * @param  {Function} f(err)
    */
-  remove: function (key, f) {}
+  remove: function (key, f) {},
+
+  /**
+   * Watch keys for change
+   * @param {Array[String]} keys array of keys to watch
+   * @param {Function} f(key, newValue)
+   */
+  watch: function(keys, f){},
+
+  /**
+   * Unwatch keys
+   * @param  {Array[String]} keys
+   * @optional
+   * @param  {Function} f(err)
+   * @optional
+   * If no parameters were given, all listeners will be removed
+   */
+  unwatch: function(keys, f){}
 });
