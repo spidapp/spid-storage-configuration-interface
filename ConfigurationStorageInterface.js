@@ -25,7 +25,9 @@ module.exports = Interface('ConfigurationStorageInterface', {
   read: function (prefix, keys, f) {},
 
   /**
-   * Write a `key` with `value` in the configuration storage
+   * Write the properties in the configuration storage
+   * When the write is done, if a key is being watched, the configuration storage must call
+   * the function passed with the key in the watch function, and provide the updated keys and values
    * @param  {String} prefix
    * @param  {Object} properties e.g. {key1: value1, key2: value2}
    * @param  {Function} f(err)
@@ -44,7 +46,7 @@ module.exports = Interface('ConfigurationStorageInterface', {
    * Watch keys for change
    * @param {String} prefix
    * @param {Array[String]} keys array of keys to watch
-   * @param {Function} f(key, newValue)
+   * @param {Function} f(updatedProperties) where updatedProperties are the properties being written or removed
    */
   watch: function (prefix, keys, f) {},
 

@@ -3,7 +3,16 @@
   "version": "0.0.3",
   "description": "[Core] Spid Storage Configuration Interface",
   "main": "ConfigurationStorageInterface.js",
-  "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://fgribreau.com/)",
+  "contributors": [
+    {
+      "name": "Francois-Guillaume Ribreau",
+      "email": "npm@fgribreau.com"
+    },
+    {
+      "name": "Etienne Rouillard",
+      "email": "rouillard.etienne@gmail.com"
+    }
+  ],
   "license": "MIT",
   "dependencies": {
     "spid-interface": "0.0.1"
