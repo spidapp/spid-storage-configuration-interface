@@ -1,6 +1,6 @@
 {
   "name": "spid-storage-configuration-interface",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "[Core] Spid Storage Configuration Interface",
   "main": "ConfigurationStorageInterface.js",
   "contributors": [
